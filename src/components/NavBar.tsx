@@ -18,10 +18,13 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex items-center">
-            <Image height={50} width={50} src="/logo.png" alt="Basey Logo" className="h-10" />
-            <span className="font-molala text-2xl text-white ml-2">Basey</span>
-          </div>
+          <Link href={"/"}>
+          
+            <div className="flex items-center">
+              <Image height={20} width={40} src="/logo.png" alt="Basey Logo" className="h-10" />
+              <span className="font-molala text-2xl text-white ml-2">Basey</span>
+            </div>
+          </Link>
 
           {/* Hamburger Menu (Mobile) */}
           <button
@@ -46,12 +49,12 @@ export default function Navbar() {
 
           {/* Navigation Links (Desktop) */}
           <div className="hidden lg:flex space-x-8">
-            {/* <Link
-              href="#about"
+            <Link
+              href="/roadmap"
               className="text-white hover:text-purple-300 text-lg font-semibold transition duration-300 hover:scale-105"
             >
-              About
-            </Link> */}
+              Roadmap
+            </Link>
             <Link
               href="https://dexscreener.com/base/0xea038a8947d56b4814b3a62655bbdcade6cec18f"
               target="blank"
@@ -83,6 +86,12 @@ export default function Navbar() {
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="lg:hidden mt-4 pb-4">
+            <Link
+              href="/roadmap"
+              className="block text-white hover:text-purple-300 text-lg font-semibold py-2"
+            >
+              Roadmap
+            </Link>
             <Link
               href="https://dexscreener.com/base/0xea038a8947d56b4814b3a62655bbdcade6cec18f"
               className="block text-white hover:text-purple-300 text-lg font-semibold py-2"

@@ -1,3 +1,4 @@
+import BackgroundImages from "@/components/Background";
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
@@ -10,7 +11,9 @@ export default function App({ Component, pageProps }: AppProps) {
       <link href="https://fonts.googleapis.com/css2?family=Moo+Lah+Lah&display=swap" rel="stylesheet" />
       <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
       <title>Basey - Base Mascot</title>  
-    </Head>  
+    </Head> 
+
+    <BackgroundImages /> 
     <Component {...pageProps} />
   </>;
 }
