@@ -1,6 +1,7 @@
 // components/Hero.jsx
 import { motion } from "framer-motion";
 import ContractAddress from "./ContractAddress";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -29,6 +30,8 @@ export default function Hero() {
       </p>
 
       {/* Call-to-Action Button */}
+      <Link href={"https://t.me/+kbseQv0yW_4wZjUx"}>
+      </Link>
       <button className="bg-white text-blue-600 px-6 py-2 md:px-8 md:py-3 rounded-full font-bold hover:bg-gray-100 transition duration-300 hover:scale-105 mb-8">
         Join the Basey Squad
       </button>
