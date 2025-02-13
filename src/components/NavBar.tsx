@@ -45,29 +45,31 @@ export default function Navbar() {
 
           {/* Navigation Links (Desktop) */}
           <div className="hidden lg:flex space-x-8">
-            <Link
+            {/* <Link
               href="#about"
               className="text-white hover:text-purple-300 text-lg font-semibold transition duration-300 hover:scale-105"
             >
               About
-            </Link>
+            </Link> */}
             <Link
-              href="#tokenomics"
+              href="https://dexscreener.com/base/0xea038a8947d56b4814b3a62655bbdcade6cec18f"
+              target="blank"
               className="text-white hover:text-purple-300 text-lg font-semibold transition duration-300 hover:scale-105"
             >
-              Tokenomics
+              Chart
             </Link>
             <Link
-              href="#community"
+              href="https://x.com/basey69420?s=11"
+              target="blank"
               className="text-white hover:text-purple-300 text-lg font-semibold transition duration-300 hover:scale-105"
             >
-              Community
+              Twitter
             </Link>
             <Link
-              href="#roadmap"
+              href="https://t.me/+kbseQv0yW_4wZjUx"
               className="text-white hover:text-purple-300 text-lg font-semibold transition duration-300 hover:scale-105"
             >
-              Roadmap
+              Telegram
             </Link>
           </div>
 
@@ -81,29 +83,29 @@ export default function Navbar() {
         {isMenuOpen && (
           <div className="lg:hidden mt-4 pb-4">
             <Link
-              href="#about"
+              href="https://dexscreener.com/base/0xea038a8947d56b4814b3a62655bbdcade6cec18f"
               className="block text-white hover:text-purple-300 text-lg font-semibold py-2"
             >
-              About
+              Chart
             </Link>
             <Link
-              href="#tokenomics"
+              href="https://x.com/basey69420?s=11"
               className="block text-white hover:text-purple-300 text-lg font-semibold py-2"
             >
-              Tokenomics
+              Twitter
             </Link>
             <Link
-              href="#community"
+              href="https://t.me/+kbseQv0yW_4wZjUx"
               className="block text-white hover:text-purple-300 text-lg font-semibold py-2"
             >
-              Community
+              Telegram
             </Link>
-            <Link
+            {/* <Link
               href="#roadmap"
               className="block text-white hover:text-purple-300 text-lg font-semibold py-2"
             >
               Roadmap
-            </Link>
+            </Link> */}
             {/* <div/ className="mt-4"> */}
               {/* <WalletButton /> */}
             {/* </div> */}
