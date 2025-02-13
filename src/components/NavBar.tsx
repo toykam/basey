@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 // import WalletButton from "./WalletButton";
 
 export default function Navbar() {
@@ -18,7 +19,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center">
-            <img src="/logo.png" alt="Basey Logo" className="h-10" />
+            <Image height={50} width={50} src="/logo.png" alt="Basey Logo" className="h-10" />
             <span className="font-molala text-2xl text-white ml-2">Basey</span>
           </div>
 
